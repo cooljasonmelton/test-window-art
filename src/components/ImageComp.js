@@ -4,12 +4,11 @@ import React from 'react';
 import '../App.css';
 
 const ImageComp = props => {
-    console.log(props)
     const {src, cName} = props.pic
 
     return (
-        <div className="srcComp">
-            <img src={src} className={cName} />
+        <div className={cName}>
+            <img src={src} style={{width:"100%"}}/>
         </div>
     );
 }
